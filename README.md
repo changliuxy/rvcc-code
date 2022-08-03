@@ -10,4 +10,5 @@ riscv64-unknown-linux-gnu-gcc -static tmp.s -o tmp
 qemu-riscv64 -L $RISCV/sysroot tmp
 ```
 [第001课 - 编译出能返回指定数值的程序](src/001-main.c)
-[第002课 - 支持+ -运算符](src/002-main.c)
+
+[第002课 - 支持+ -运算符](src/002-main.c)s
