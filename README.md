@@ -14,3 +14,5 @@ qemu-riscv64 -L $RISCV/sysroot tmp
 [第002课 - 支持+ -运算符](src/002-main.c)
 
 [第003课 - 加入一个终结符解析器来解析空格](src/003-main.c)
+
+[第004课 - 改进报错信息](src/004-main.c)

@@ -31,6 +31,7 @@ static void error(char *fmt, ...) {
 }
 
 static bool equal(token * tok, char *str) {
+    //把存储区 str1 和存储区 str2 的前 n 个字节进行比较。
     return memcmp(tok->loc, str, tok->len) == 0 && str[tok->len] == '\0';
 }
 
@@ -66,6 +67,7 @@ static token *tokenize(char *p) {
 	    cur->next = newtoken(TK_NUM, p, p);
 	    cur = cur->next;
 	    const char *oldptr = p;
+        // 把参数 str 所指向的字符串根据给定的 base 转换为一个无符号长整数
 	    cur->val = strtoul(p, &p, 10);
 	    cur->len = p - oldptr;
 	    continue;
